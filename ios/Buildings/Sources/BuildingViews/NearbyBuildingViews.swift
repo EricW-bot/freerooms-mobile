@@ -40,8 +40,6 @@ public struct NearbyBuildingRowContent: View {
           Text("·")
           if let count = building.numberOfAvailableRooms {
             Text("^[\(count) room](inflect: true) available")
-          } else {
-            Text("Availability unknown")
           }
         }
         .lineLimit(1)
