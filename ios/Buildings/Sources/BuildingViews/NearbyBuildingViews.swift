@@ -37,8 +37,8 @@ public struct NearbyBuildingRowContent: View {
           Text(nearbyBuilding.formattedDistance)
             .fontWeight(.semibold)
             .foregroundStyle(theme.accent.primary)
-          Text("·")
           if let count = building.numberOfAvailableRooms {
+            Text("·")
             Text("^[\(count) room](inflect: true) available")
           }
         }
